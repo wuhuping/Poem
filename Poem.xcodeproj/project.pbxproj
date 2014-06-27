@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11576410195947F90062FF6E /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1157640F195947F90062FF6E /* ContainerViewController.m */; };
+		11576413195951900062FF6E /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11576412195951900062FF6E /* MenuTableViewCell.m */; };
+		115E6E211957CF69005918A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115E6E201957CF69005918A3 /* Foundation.framework */; };
+		115E6E231957CF69005918A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115E6E221957CF69005918A3 /* CoreGraphics.framework */; };
+		115E6E251957CF69005918A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115E6E241957CF69005918A3 /* UIKit.framework */; };
+		115E6E2B1957CF69005918A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 115E6E291957CF69005918A3 /* InfoPlist.strings */; };
+		115E6E2D1957CF69005918A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 115E6E2C1957CF69005918A3 /* main.m */; };
+		115E6E311957CF69005918A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 115E6E301957CF69005918A3 /* AppDelegate.m */; };
+		115E6E341957CF69005918A3 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115E6E321957CF69005918A3 /* Main_iPhone.storyboard */; };
+		115E6E371957CF69005918A3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115E6E351957CF69005918A3 /* Main_iPad.storyboard */; };
+		115E6E3A1957CF69005918A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115E6E391957CF69005918A3 /* ViewController.m */; };
+		115E6E3C1957CF69005918A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115E6E3B1957CF69005918A3 /* Images.xcassets */; };
+		115E6E431957CF69005918A3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115E6E421957CF69005918A3 /* XCTest.framework */; };
+		115E6E441957CF69005918A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115E6E201957CF69005918A3 /* Foundation.framework */; };
+		115E6E451957CF69005918A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115E6E241957CF69005918A3 /* UIKit.framework */; };
+		115E6E4D1957CF69005918A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 115E6E4B1957CF69005918A3 /* InfoPlist.strings */; };
+		115E6E4F1957CF69005918A3 /* PoemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 115E6E4E1957CF69005918A3 /* PoemTests.m */; };
+		115E6E601957CFD6005918A3 /* PoemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115E6E5F1957CFD6005918A3 /* PoemViewController.m */; };
+		115E6E631957CFEA005918A3 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115E6E621957CFEA005918A3 /* MenuViewController.m */; };
+		115E6E661957D002005918A3 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115E6E651957D002005918A3 /* ContentViewController.m */; };
+		115E6E6C1957D138005918A3 /* PoemNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115E6E6B1957D138005918A3 /* PoemNavigationController.m */; };
+		115E6E6F1957D17A005918A3 /* PoemService.m in Sources */ = {isa = PBXBuildFile; fileRef = 115E6E6E1957D17A005918A3 /* PoemService.m */; };
+		115E6E721957D29C005918A3 /* PoemDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 115E6E711957D29C005918A3 /* PoemDataService.m */; };
+		115E6E781957D475005918A3 /* Poem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 115E6E761957D475005918A3 /* Poem.xcdatamodeld */; };
+		115E6E7B1957D6BB005918A3 /* Poem.m in Sources */ = {isa = PBXBuildFile; fileRef = 115E6E7A1957D6BB005918A3 /* Poem.m */; };
+		115E6E8319581D63005918A3 /* AnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 115E6E8219581D63005918A3 /* AnimationHelper.m */; };
+		116CF1CC195D0B6700055740 /* CoreDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 116CF1CB195D0B6700055740 /* CoreDataService.m */; };
+		116CF1CE195D0BE000055740 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116CF1CD195D0BE000055740 /* CoreData.framework */; };
+		116CF1D8195D3E2600055740 /* Bamboo_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 116CF1D0195D3E2600055740 /* Bamboo_bg@2x.png */; };
+		116CF1D9195D3E2600055740 /* chrysanthemum_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 116CF1D1195D3E2600055740 /* chrysanthemum_bg@2x.png */; };
+		116CF1DA195D3E2600055740 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 116CF1D2195D3E2600055740 /* default@2x.png */; };
+		116CF1DB195D3E2600055740 /* indexbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 116CF1D3195D3E2600055740 /* indexbg@2x.png */; };
+		116CF1DC195D3E2600055740 /* menu_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 116CF1D4195D3E2600055740 /* menu_bg@2x.png */; };
+		116CF1DD195D3E2600055740 /* orchid_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 116CF1D5195D3E2600055740 /* orchid_bg@2x.png */; };
+		116CF1DE195D3E2600055740 /* pium2_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 116CF1D6195D3E2600055740 /* pium2_bg@2x.png */; };
+		116CF1DF195D3E2600055740 /* plum1_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 116CF1D7195D3E2600055740 /* plum1_bg@2x.png */; };
+		116CF1E2195D40A100055740 /* UIImage+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 116CF1E1195D40A100055740 /* UIImage+Expand.m */; };
+		116CF1E4195D40E600055740 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116CF1E3195D40E600055740 /* QuartzCore.framework */; };
+		116CF1E6195D40F200055740 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116CF1E5195D40F200055740 /* Accelerate.framework */; };
+		F723B0B506C145CCA21D45C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4C3479C7404EC89391A871 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		115E6E461957CF69005918A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 115E6E151957CF69005918A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 115E6E1C1957CF69005918A3;
+			remoteInfo = Poem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1157640E195947F90062FF6E /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		1157640F195947F90062FF6E /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		11576411195951900062FF6E /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
+		11576412195951900062FF6E /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
+		115E6E1D1957CF69005918A3 /* Poem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		115E6E201957CF69005918A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		115E6E221957CF69005918A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		115E6E241957CF69005918A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		115E6E281957CF69005918A3 /* Poem-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Poem-Info.plist"; sourceTree = "<group>"; };
+		115E6E2A1957CF69005918A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		115E6E2C1957CF69005918A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		115E6E2E1957CF69005918A3 /* Poem-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Poem-Prefix.pch"; sourceTree = "<group>"; };
+		115E6E2F1957CF69005918A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		115E6E301957CF69005918A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		115E6E331957CF69005918A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		115E6E361957CF69005918A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		115E6E381957CF69005918A3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		115E6E391957CF69005918A3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		115E6E3B1957CF69005918A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		115E6E411957CF69005918A3 /* PoemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		115E6E421957CF69005918A3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		115E6E4A1957CF69005918A3 /* PoemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PoemTests-Info.plist"; sourceTree = "<group>"; };
+		115E6E4C1957CF69005918A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		115E6E4E1957CF69005918A3 /* PoemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoemTests.m; sourceTree = "<group>"; };
+		115E6E5E1957CFD6005918A3 /* PoemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoemViewController.h; sourceTree = "<group>"; };
+		115E6E5F1957CFD6005918A3 /* PoemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoemViewController.m; sourceTree = "<group>"; };
+		115E6E611957CFEA005918A3 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		115E6E621957CFEA005918A3 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		115E6E641957D002005918A3 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		115E6E651957D002005918A3 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		115E6E6A1957D138005918A3 /* PoemNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoemNavigationController.h; sourceTree = "<group>"; };
+		115E6E6B1957D138005918A3 /* PoemNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoemNavigationController.m; sourceTree = "<group>"; };
+		115E6E6D1957D17A005918A3 /* PoemService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoemService.h; sourceTree = "<group>"; };
+		115E6E6E1957D17A005918A3 /* PoemService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoemService.m; sourceTree = "<group>"; };
+		115E6E701957D29C005918A3 /* PoemDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoemDataService.h; sourceTree = "<group>"; };
+		115E6E711957D29C005918A3 /* PoemDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoemDataService.m; sourceTree = "<group>"; };
+		115E6E771957D475005918A3 /* Poem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Poem.xcdatamodel; sourceTree = "<group>"; };
+		115E6E791957D6BB005918A3 /* Poem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Poem.h; sourceTree = "<group>"; };
+		115E6E7A1957D6BB005918A3 /* Poem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Poem.m; sourceTree = "<group>"; };
+		115E6E8019580A5C005918A3 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		115E6E8119581D63005918A3 /* AnimationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationHelper.h; sourceTree = "<group>"; };
+		115E6E8219581D63005918A3 /* AnimationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationHelper.m; sourceTree = "<group>"; };
+		116CF1CA195D0B6700055740 /* CoreDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataService.h; sourceTree = "<group>"; };
+		116CF1CB195D0B6700055740 /* CoreDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataService.m; sourceTree = "<group>"; };
+		116CF1CD195D0BE000055740 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		116CF1D0195D3E2600055740 /* Bamboo_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bamboo_bg@2x.png"; sourceTree = "<group>"; };
+		116CF1D1195D3E2600055740 /* chrysanthemum_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chrysanthemum_bg@2x.png"; sourceTree = "<group>"; };
+		116CF1D2195D3E2600055740 /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
+		116CF1D3195D3E2600055740 /* indexbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "indexbg@2x.png"; sourceTree = "<group>"; };
+		116CF1D4195D3E2600055740 /* menu_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_bg@2x.png"; sourceTree = "<group>"; };
+		116CF1D5195D3E2600055740 /* orchid_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orchid_bg@2x.png"; sourceTree = "<group>"; };
+		116CF1D6195D3E2600055740 /* pium2_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pium2_bg@2x.png"; sourceTree = "<group>"; };
+		116CF1D7195D3E2600055740 /* plum1_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plum1_bg@2x.png"; sourceTree = "<group>"; };
+		116CF1E0195D40A100055740 /* UIImage+Expand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Expand.h"; sourceTree = "<group>"; };
+		116CF1E1195D40A100055740 /* UIImage+Expand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Expand.m"; sourceTree = "<group>"; };
+		116CF1E3195D40E600055740 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		116CF1E5195D40F200055740 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		7B4C3479C7404EC89391A871 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC197AEBF7542E1BFEAAB9A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		115E6E1A1957CF69005918A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				116CF1E6195D40F200055740 /* Accelerate.framework in Frameworks */,
+				116CF1E4195D40E600055740 /* QuartzCore.framework in Frameworks */,
+				116CF1CE195D0BE000055740 /* CoreData.framework in Frameworks */,
+				115E6E231957CF69005918A3 /* CoreGraphics.framework in Frameworks */,
+				115E6E251957CF69005918A3 /* UIKit.framework in Frameworks */,
+				115E6E211957CF69005918A3 /* Foundation.framework in Frameworks */,
+				F723B0B506C145CCA21D45C9 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115E6E3E1957CF69005918A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115E6E431957CF69005918A3 /* XCTest.framework in Frameworks */,
+				115E6E451957CF69005918A3 /* UIKit.framework in Frameworks */,
+				115E6E441957CF69005918A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		115E6E141957CF69005918A3 = {
+			isa = PBXGroup;
+			children = (
+				115E6E261957CF69005918A3 /* Poem */,
+				115E6E481957CF69005918A3 /* PoemTests */,
+				115E6E1F1957CF69005918A3 /* Frameworks */,
+				115E6E1E1957CF69005918A3 /* Products */,
+				BBC197AEBF7542E1BFEAAB9A /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		115E6E1E1957CF69005918A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				115E6E1D1957CF69005918A3 /* Poem.app */,
+				115E6E411957CF69005918A3 /* PoemTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		115E6E1F1957CF69005918A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				116CF1E5195D40F200055740 /* Accelerate.framework */,
+				116CF1E3195D40E600055740 /* QuartzCore.framework */,
+				116CF1CD195D0BE000055740 /* CoreData.framework */,
+				115E6E201957CF69005918A3 /* Foundation.framework */,
+				115E6E221957CF69005918A3 /* CoreGraphics.framework */,
+				115E6E241957CF69005918A3 /* UIKit.framework */,
+				115E6E421957CF69005918A3 /* XCTest.framework */,
+				7B4C3479C7404EC89391A871 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		115E6E261957CF69005918A3 /* Poem */ = {
+			isa = PBXGroup;
+			children = (
+				115E6E7C19580A33005918A3 /* Common */,
+				115E6E5B1957CFBD005918A3 /* Data */,
+				115E6E581957CFBD005918A3 /* Business */,
+				115E6E591957CFBD005918A3 /* Controller */,
+				115E6E5C1957CFBD005918A3 /* Model */,
+				115E6E5D1957CFBD005918A3 /* View */,
+				115E6E2F1957CF69005918A3 /* AppDelegate.h */,
+				115E6E301957CF69005918A3 /* AppDelegate.m */,
+				115E6E381957CF69005918A3 /* ViewController.h */,
+				115E6E391957CF69005918A3 /* ViewController.m */,
+				115E6E321957CF69005918A3 /* Main_iPhone.storyboard */,
+				115E6E351957CF69005918A3 /* Main_iPad.storyboard */,
+				115E6E3B1957CF69005918A3 /* Images.xcassets */,
+				116CF1CF195D3E2600055740 /* Image */,
+				115E6E271957CF69005918A3 /* Supporting Files */,
+			);
+			path = Poem;
+			sourceTree = "<group>";
+		};
+		115E6E271957CF69005918A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				115E6E281957CF69005918A3 /* Poem-Info.plist */,
+				115E6E291957CF69005918A3 /* InfoPlist.strings */,
+				115E6E2C1957CF69005918A3 /* main.m */,
+				115E6E2E1957CF69005918A3 /* Poem-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		115E6E481957CF69005918A3 /* PoemTests */ = {
+			isa = PBXGroup;
+			children = (
+				115E6E4E1957CF69005918A3 /* PoemTests.m */,
+				115E6E491957CF69005918A3 /* Supporting Files */,
+			);
+			path = PoemTests;
+			sourceTree = "<group>";
+		};
+		115E6E491957CF69005918A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				115E6E4A1957CF69005918A3 /* PoemTests-Info.plist */,
+				115E6E4B1957CF69005918A3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		115E6E581957CFBD005918A3 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				115E6E6D1957D17A005918A3 /* PoemService.h */,
+				115E6E6E1957D17A005918A3 /* PoemService.m */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		115E6E591957CFBD005918A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				115E6E5A1957CFBD005918A3 /* Custom */,
+				1157640E195947F90062FF6E /* ContainerViewController.h */,
+				1157640F195947F90062FF6E /* ContainerViewController.m */,
+				115E6E611957CFEA005918A3 /* MenuViewController.h */,
+				115E6E621957CFEA005918A3 /* MenuViewController.m */,
+				115E6E641957D002005918A3 /* ContentViewController.h */,
+				115E6E651957D002005918A3 /* ContentViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		115E6E5A1957CFBD005918A3 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				115E6E5E1957CFD6005918A3 /* PoemViewController.h */,
+				115E6E5F1957CFD6005918A3 /* PoemViewController.m */,
+				115E6E6A1957D138005918A3 /* PoemNavigationController.h */,
+				115E6E6B1957D138005918A3 /* PoemNavigationController.m */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		115E6E5B1957CFBD005918A3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				115E6E701957D29C005918A3 /* PoemDataService.h */,
+				115E6E711957D29C005918A3 /* PoemDataService.m */,
+				116CF1CA195D0B6700055740 /* CoreDataService.h */,
+				116CF1CB195D0B6700055740 /* CoreDataService.m */,
+				115E6E761957D475005918A3 /* Poem.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		115E6E5C1957CFBD005918A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				115E6E791957D6BB005918A3 /* Poem.h */,
+				115E6E7A1957D6BB005918A3 /* Poem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		115E6E5D1957CFBD005918A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11576411195951900062FF6E /* MenuTableViewCell.h */,
+				11576412195951900062FF6E /* MenuTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		115E6E7C19580A33005918A3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				115E6E8019580A5C005918A3 /* Config.h */,
+				115E6E8119581D63005918A3 /* AnimationHelper.h */,
+				115E6E8219581D63005918A3 /* AnimationHelper.m */,
+				116CF1E0195D40A100055740 /* UIImage+Expand.h */,
+				116CF1E1195D40A100055740 /* UIImage+Expand.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		116CF1CF195D3E2600055740 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				116CF1D0195D3E2600055740 /* Bamboo_bg@2x.png */,
+				116CF1D1195D3E2600055740 /* chrysanthemum_bg@2x.png */,
+				116CF1D2195D3E2600055740 /* default@2x.png */,
+				116CF1D3195D3E2600055740 /* indexbg@2x.png */,
+				116CF1D4195D3E2600055740 /* menu_bg@2x.png */,
+				116CF1D5195D3E2600055740 /* orchid_bg@2x.png */,
+				116CF1D6195D3E2600055740 /* pium2_bg@2x.png */,
+				116CF1D7195D3E2600055740 /* plum1_bg@2x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		115E6E1C1957CF69005918A3 /* Poem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 115E6E521957CF69005918A3 /* Build configuration list for PBXNativeTarget "Poem" */;
+			buildPhases = (
+				BC674F42AA8A497C86D078F1 /* Check Pods Manifest.lock */,
+				115E6E191957CF69005918A3 /* Sources */,
+				115E6E1A1957CF69005918A3 /* Frameworks */,
+				115E6E1B1957CF69005918A3 /* Resources */,
+				E0FC2F4341294D3BA1B72F37 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Poem;
+			productName = Poem;
+			productReference = 115E6E1D1957CF69005918A3 /* Poem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		115E6E401957CF69005918A3 /* PoemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 115E6E551957CF69005918A3 /* Build configuration list for PBXNativeTarget "PoemTests" */;
+			buildPhases = (
+				115E6E3D1957CF69005918A3 /* Sources */,
+				115E6E3E1957CF69005918A3 /* Frameworks */,
+				115E6E3F1957CF69005918A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				115E6E471957CF69005918A3 /* PBXTargetDependency */,
+			);
+			name = PoemTests;
+			productName = PoemTests;
+			productReference = 115E6E411957CF69005918A3 /* PoemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		115E6E151957CF69005918A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = wuhuping;
+				TargetAttributes = {
+					115E6E401957CF69005918A3 = {
+						TestTargetID = 115E6E1C1957CF69005918A3;
+					};
+				};
+			};
+			buildConfigurationList = 115E6E181957CF69005918A3 /* Build configuration list for PBXProject "Poem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 115E6E141957CF69005918A3;
+			productRefGroup = 115E6E1E1957CF69005918A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				115E6E1C1957CF69005918A3 /* Poem */,
+				115E6E401957CF69005918A3 /* PoemTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		115E6E1B1957CF69005918A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115E6E371957CF69005918A3 /* Main_iPad.storyboard in Resources */,
+				115E6E3C1957CF69005918A3 /* Images.xcassets in Resources */,
+				116CF1DE195D3E2600055740 /* pium2_bg@2x.png in Resources */,
+				116CF1DF195D3E2600055740 /* plum1_bg@2x.png in Resources */,
+				116CF1D9195D3E2600055740 /* chrysanthemum_bg@2x.png in Resources */,
+				115E6E341957CF69005918A3 /* Main_iPhone.storyboard in Resources */,
+				116CF1DD195D3E2600055740 /* orchid_bg@2x.png in Resources */,
+				116CF1DB195D3E2600055740 /* indexbg@2x.png in Resources */,
+				116CF1DC195D3E2600055740 /* menu_bg@2x.png in Resources */,
+				116CF1D8195D3E2600055740 /* Bamboo_bg@2x.png in Resources */,
+				115E6E2B1957CF69005918A3 /* InfoPlist.strings in Resources */,
+				116CF1DA195D3E2600055740 /* default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115E6E3F1957CF69005918A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115E6E4D1957CF69005918A3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC674F42AA8A497C86D078F1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0FC2F4341294D3BA1B72F37 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		115E6E191957CF69005918A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115E6E3A1957CF69005918A3 /* ViewController.m in Sources */,
+				115E6E311957CF69005918A3 /* AppDelegate.m in Sources */,
+				115E6E6F1957D17A005918A3 /* PoemService.m in Sources */,
+				115E6E6C1957D138005918A3 /* PoemNavigationController.m in Sources */,
+				115E6E7B1957D6BB005918A3 /* Poem.m in Sources */,
+				115E6E661957D002005918A3 /* ContentViewController.m in Sources */,
+				115E6E2D1957CF69005918A3 /* main.m in Sources */,
+				116CF1E2195D40A100055740 /* UIImage+Expand.m in Sources */,
+				116CF1CC195D0B6700055740 /* CoreDataService.m in Sources */,
+				115E6E601957CFD6005918A3 /* PoemViewController.m in Sources */,
+				115E6E8319581D63005918A3 /* AnimationHelper.m in Sources */,
+				11576410195947F90062FF6E /* ContainerViewController.m in Sources */,
+				11576413195951900062FF6E /* MenuTableViewCell.m in Sources */,
+				115E6E631957CFEA005918A3 /* MenuViewController.m in Sources */,
+				115E6E781957D475005918A3 /* Poem.xcdatamodeld in Sources */,
+				115E6E721957D29C005918A3 /* PoemDataService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		115E6E3D1957CF69005918A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				115E6E4F1957CF69005918A3 /* PoemTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		115E6E471957CF69005918A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 115E6E1C1957CF69005918A3 /* Poem */;
+			targetProxy = 115E6E461957CF69005918A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		115E6E291957CF69005918A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				115E6E2A1957CF69005918A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		115E6E321957CF69005918A3 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				115E6E331957CF69005918A3 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		115E6E351957CF69005918A3 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				115E6E361957CF69005918A3 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		115E6E4B1957CF69005918A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				115E6E4C1957CF69005918A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		115E6E501957CF69005918A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		115E6E511957CF69005918A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		115E6E531957CF69005918A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBC197AEBF7542E1BFEAAB9A /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Poem/Poem-Prefix.pch";
+				INFOPLIST_FILE = "Poem/Poem-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		115E6E541957CF69005918A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBC197AEBF7542E1BFEAAB9A /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Poem/Poem-Prefix.pch";
+				INFOPLIST_FILE = "Poem/Poem-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		115E6E561957CF69005918A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Poem.app/Poem";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Poem/Poem-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PoemTests/PoemTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		115E6E571957CF69005918A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Poem.app/Poem";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Poem/Poem-Prefix.pch";
+				INFOPLIST_FILE = "PoemTests/PoemTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		115E6E181957CF69005918A3 /* Build configuration list for PBXProject "Poem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				115E6E501957CF69005918A3 /* Debug */,
+				115E6E511957CF69005918A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		115E6E521957CF69005918A3 /* Build configuration list for PBXNativeTarget "Poem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				115E6E531957CF69005918A3 /* Debug */,
+				115E6E541957CF69005918A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		115E6E551957CF69005918A3 /* Build configuration list for PBXNativeTarget "PoemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				115E6E561957CF69005918A3 /* Debug */,
+				115E6E571957CF69005918A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		115E6E761957D475005918A3 /* Poem.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				115E6E771957D475005918A3 /* Poem.xcdatamodel */,
+			);
+			currentVersion = 115E6E771957D475005918A3 /* Poem.xcdatamodel */;
+			path = Poem.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 115E6E151957CF69005918A3 /* Project object */;
+}

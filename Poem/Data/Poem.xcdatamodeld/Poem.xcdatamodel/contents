@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Poem" representedClassName="Poem" syncable="YES">
+        <attribute name="poemAppreciation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="poemAuthor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="poemAuthorInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="poemContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="poemID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="poemTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="poemTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="poemType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeParse" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userIp" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Poem" positionX="-63" positionY="-342" width="128" height="195"/>
+    </elements>
+</model>
