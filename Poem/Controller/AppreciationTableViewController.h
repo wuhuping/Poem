@@ -1,5 +1,5 @@
 //
-//  AppreciationViewController.h
+//  AppreciationTableViewController.h
 //  Poem
 //
 //  Created by wuhuping on 14-6-30.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppreciationViewController : UIViewController
+@interface AppreciationTableViewController : UITableViewController
 
 @end
