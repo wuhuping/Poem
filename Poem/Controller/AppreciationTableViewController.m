@@ -7,7 +7,7 @@
 //
 
 #import "AppreciationTableViewController.h"
-
+#import "Poem.h"
 @interface AppreciationTableViewController ()
 
 @end
@@ -44,28 +44,51 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 0;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Apreciation" forIndexPath:indexPath];
     
-    // Configure the cell...
-    
+    cell.textLabel.text = self.poem.poemAppreciation;
+    cell.textLabel.numberOfLines = 10000;
     return cell;
 }
-*/
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] init];
+        }
+        
+        [cell setNeedsUpdateConstraints];
+        [cell updateConstraintsIfNeeded];
+        
+        cell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableView.bounds), CGRectGetHeight(cell.bounds));
+        
+        [cell setNeedsLayout];
+        [cell layoutIfNeeded];
+        
+        CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+        
+        height += 1;
+        
+        return height;
+    }else {
+        return 44.0;
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.

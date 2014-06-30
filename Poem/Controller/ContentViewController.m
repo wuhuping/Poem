@@ -11,11 +11,12 @@
 #import "Poem.h"
 #import "ContainerViewController.h"
 #import "MenuViewController.h"
+#import "AppreciationTableViewController.h"
 @interface ContentViewController ()
 {
     __weak IBOutlet UIScrollView *_scrollView;
     __weak IBOutlet UIImageView *_backgroundImageView;
-
+    AppreciationTableViewController  *_appreciationViewController;
 }
 @end
 
@@ -76,6 +77,15 @@
         }
     }
     [containerViewController transitionFromViewController:self toViewController:menuViewController];
+}
+
+- (IBAction)appreciationButtonPressed:(id)sender {
+    _appreciationViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"AppreciationTableViewController"];
+    _appreciationViewController.poem = self.poem;
+    [self.navigationController pushViewController:_appreciationViewController animated:YES];
+}
+
+- (IBAction)authorButtonPressed:(id)sender {
 }
 
 - (void)layoutSubViewWithPoem:(Poem*)poem

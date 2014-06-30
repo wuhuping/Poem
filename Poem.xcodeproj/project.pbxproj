@@ -46,6 +46,8 @@
 		116CF1E2195D40A100055740 /* UIImage+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 116CF1E1195D40A100055740 /* UIImage+Expand.m */; };
 		116CF1E4195D40E600055740 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116CF1E3195D40E600055740 /* QuartzCore.framework */; };
 		116CF1E6195D40F200055740 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116CF1E5195D40F200055740 /* Accelerate.framework */; };
+		11BE3D2B1961391F00D4EEFE /* AuthorInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BE3D2A1961391F00D4EEFE /* AuthorInfoView.m */; };
+		11BE3D311961442100D4EEFE /* AppreciationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BE3D301961442100D4EEFE /* AppreciationTableViewController.m */; };
 		F723B0B506C145CCA21D45C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4C3479C7404EC89391A871 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +119,10 @@
 		116CF1E1195D40A100055740 /* UIImage+Expand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Expand.m"; sourceTree = "<group>"; };
 		116CF1E3195D40E600055740 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		116CF1E5195D40F200055740 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		11BE3D291961391F00D4EEFE /* AuthorInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorInfoView.h; sourceTree = "<group>"; };
+		11BE3D2A1961391F00D4EEFE /* AuthorInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorInfoView.m; sourceTree = "<group>"; };
+		11BE3D2F1961442100D4EEFE /* AppreciationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppreciationTableViewController.h; sourceTree = "<group>"; };
+		11BE3D301961442100D4EEFE /* AppreciationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppreciationTableViewController.m; sourceTree = "<group>"; };
 		7B4C3479C7404EC89391A871 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC197AEBF7542E1BFEAAB9A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -254,6 +260,8 @@
 				115E6E621957CFEA005918A3 /* MenuViewController.m */,
 				115E6E641957D002005918A3 /* ContentViewController.h */,
 				115E6E651957D002005918A3 /* ContentViewController.m */,
+				11BE3D2F1961442100D4EEFE /* AppreciationTableViewController.h */,
+				11BE3D301961442100D4EEFE /* AppreciationTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -295,6 +303,8 @@
 			children = (
 				11576411195951900062FF6E /* MenuTableViewCell.h */,
 				11576412195951900062FF6E /* MenuTableViewCell.m */,
+				11BE3D291961391F00D4EEFE /* AuthorInfoView.h */,
+				11BE3D2A1961391F00D4EEFE /* AuthorInfoView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -467,11 +477,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11BE3D311961442100D4EEFE /* AppreciationTableViewController.m in Sources */,
 				115E6E3A1957CF69005918A3 /* ViewController.m in Sources */,
 				115E6E311957CF69005918A3 /* AppDelegate.m in Sources */,
 				115E6E6F1957D17A005918A3 /* PoemService.m in Sources */,
 				115E6E6C1957D138005918A3 /* PoemNavigationController.m in Sources */,
 				115E6E7B1957D6BB005918A3 /* Poem.m in Sources */,
+				11BE3D2B1961391F00D4EEFE /* AuthorInfoView.m in Sources */,
 				115E6E661957D002005918A3 /* ContentViewController.m in Sources */,
 				115E6E2D1957CF69005918A3 /* main.m in Sources */,
 				116CF1E2195D40A100055740 /* UIImage+Expand.m in Sources */,

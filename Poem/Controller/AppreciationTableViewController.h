@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class Poem;
 @interface AppreciationTableViewController : UITableViewController
 
+@property (nonatomic, strong) Poem *poem;
 @end
