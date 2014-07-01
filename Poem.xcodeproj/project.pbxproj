@@ -36,6 +36,7 @@
 		1165BC2419625CBD00E4C614 /* AppreciationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1165BC2319625CBD00E4C614 /* AppreciationCell.m */; };
 		1165BC2719625D5300E4C614 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1165BC2619625D5300E4C614 /* UIView+AutoLayout.m */; };
 		1165BC2A1962976D00E4C614 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 1165BC291962976D00E4C614 /* Common.m */; };
+		1165BC2C1962AD7600E4C614 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1165BC2B1962AD7600E4C614 /* libz.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
 		116CF1CC195D0B6700055740 /* CoreDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 116CF1CB195D0B6700055740 /* CoreDataService.m */; };
 		116CF1CE195D0BE000055740 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116CF1CD195D0BE000055740 /* CoreData.framework */; };
 		116CF1D8195D3E2600055740 /* Bamboo_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 116CF1D0195D3E2600055740 /* Bamboo_bg@2x.png */; };
@@ -113,6 +114,7 @@
 		1165BC2619625D5300E4C614 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		1165BC281962976D00E4C614 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		1165BC291962976D00E4C614 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		1165BC2B1962AD7600E4C614 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		116CF1CA195D0B6700055740 /* CoreDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataService.h; sourceTree = "<group>"; };
 		116CF1CB195D0B6700055740 /* CoreDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataService.m; sourceTree = "<group>"; };
 		116CF1CD195D0BE000055740 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -141,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1165BC2C1962AD7600E4C614 /* libz.dylib in Frameworks */,
 				116CF1E6195D40F200055740 /* Accelerate.framework in Frameworks */,
 				116CF1E4195D40E600055740 /* QuartzCore.framework in Frameworks */,
 				116CF1CE195D0BE000055740 /* CoreData.framework in Frameworks */,
@@ -187,6 +190,7 @@
 		115E6E1F1957CF69005918A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1165BC2B1962AD7600E4C614 /* libz.dylib */,
 				116CF1E5195D40F200055740 /* Accelerate.framework */,
 				116CF1E3195D40E600055740 /* QuartzCore.framework */,
 				116CF1CD195D0BE000055740 /* CoreData.framework */,
@@ -652,6 +656,17 @@
 				GCC_PREFIX_HEADER = "Poem/Poem-Prefix.pch";
 				INFOPLIST_FILE = "Poem/Poem-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -667,6 +682,17 @@
 				GCC_PREFIX_HEADER = "Poem/Poem-Prefix.pch";
 				INFOPLIST_FILE = "Poem/Poem-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

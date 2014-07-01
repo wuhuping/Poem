@@ -33,6 +33,12 @@ static NSString *AppreciationCellIdentifier = @"AppreciationCell";
 {
     [super viewDidLoad];
     
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"下拉刷新"];
+    [self.refreshControl addTarget:self action:@selector(refreshControllValueChanged) forControlEvents:UIControlEventValueChanged];
+    
     [self.tableView registerClass:[AppreciationCell class] forCellReuseIdentifier:AppreciationCellIdentifier];
 }
 
@@ -40,7 +46,7 @@ static NSString *AppreciationCellIdentifier = @"AppreciationCell";
 {
     [super viewWillAppear:animated];
     
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+
     self.title = @"赏析";
 }
 
@@ -48,6 +54,16 @@ static NSString *AppreciationCellIdentifier = @"AppreciationCell";
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)refreshControllValueChanged
+{
+    [self performSelector:@selector(handleData) withObject:nil afterDelay:2];
+}
+
+- (void)handleData
+{
+    [self.refreshControl endRefreshing];
 }
 
 #pragma mark - Table view data source
