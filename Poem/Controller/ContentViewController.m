@@ -12,6 +12,7 @@
 #import "ContainerViewController.h"
 #import "MenuViewController.h"
 #import "AppreciationTableViewController.h"
+#import "Common.h"
 @interface ContentViewController ()
 {
     __weak IBOutlet UIScrollView *_scrollView;
@@ -115,12 +116,23 @@
     originY = originY + 30 + 20;
     
     NSArray *poemLines = [poem.poemContent componentsSeparatedByString:@"<br />"];
+    NSString *maxLenghtStr = nil;
+    for (NSString *str in poemLines) {
+        maxLenghtStr = maxLenghtStr.length > str.length ? maxLenghtStr : str;
+    }
+    
+    CGSize size = [Common sizeOfString:maxLenghtStr font:[UIFont systemFontOfSize:20.0]];
+    CGFloat fontSize = 20.0;
+    while (size.width > kWinSize.width - 5*2) {
+        fontSize --;
+        size = [Common sizeOfString:maxLenghtStr font:[UIFont systemFontOfSize:fontSize]];
+    }
     NSUInteger count = poemLines.count;
     for (int i = 0; i < count; i ++) {
         UILabel *poemLabel = [[UILabel alloc] init];
         poemLabel.frame = CGRectMake(0, originY, kWinSize.width, 30);
         poemLabel.textAlignment = NSTextAlignmentCenter;
-        poemLabel.font = [UIFont systemFontOfSize:20.0];
+        poemLabel.font = [UIFont systemFontOfSize:fontSize];
         poemLabel.text = poemLines[i];
         [_scrollView addSubview:poemLabel];
         originY = originY + 40;
