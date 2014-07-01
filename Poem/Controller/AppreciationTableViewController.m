@@ -36,7 +36,6 @@ static NSString *AppreciationCellIdentifier = @"AppreciationCell";
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     
     self.refreshControl = [[UIRefreshControl alloc] init];
-    self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"下拉刷新"];
     [self.refreshControl addTarget:self action:@selector(refreshControllValueChanged) forControlEvents:UIControlEventValueChanged];
     
     [self.tableView registerClass:[AppreciationCell class] forCellReuseIdentifier:AppreciationCellIdentifier];
