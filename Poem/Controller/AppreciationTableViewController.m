@@ -8,9 +8,15 @@
 
 #import "AppreciationTableViewController.h"
 #import "Poem.h"
+#import "AppreciationCell.h"
+static NSString *AppreciationCellIdentifier = @"AppreciationCell";
+
 @interface AppreciationTableViewController ()
 
+@property (nonatomic, strong) NSMutableArray *commentArray;
+@property (strong, nonatomic) NSMutableDictionary *offscreenCells;
 @end
+
 
 @implementation AppreciationTableViewController
 
@@ -27,11 +33,15 @@
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    [self.tableView registerClass:[AppreciationCell class] forCellReuseIdentifier:AppreciationCellIdentifier];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    self.title = @"赏析";
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,32 +55,71 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 0;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 0;
+    if (section == 0) {
+        return 1;
+    }else {
+        return self.commentArray.count;
+    }
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (section == 0) {
+        return 0.0f;
+    }else {
+        return 20.0f;
+    }
+}
+
+- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    if (section == 0) {
+        return nil;
+    }else {
+        __autoreleasing UIView *headerSectionView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kWinSize.width, 20)];
+        headerSectionView.backgroundColor = [UIColor colorWithRed:23/255.0 green:79/255.0 blue:121/255.0 alpha:1.0];
+        UILabel *titleLable = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, kWinSize.width - 35, 20)];
+        titleLable.backgroundColor = [UIColor clearColor];
+        titleLable.font = [UIFont boldSystemFontOfSize:15.0];
+        titleLable.textColor = [UIColor whiteColor];
+        titleLable.text = @"最新评论";
+        [headerSectionView addSubview:titleLable];
+        
+        return headerSectionView;
+    }
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Apreciation" forIndexPath:indexPath];
-    
-    cell.textLabel.text = self.poem.poemAppreciation;
-    cell.textLabel.numberOfLines = 10000;
-    return cell;
+    if (indexPath.section == 0) {
+        AppreciationCell *cell = [tableView dequeueReusableCellWithIdentifier:AppreciationCellIdentifier];
+        cell.bodyLabel.text = self.poem.poemAppreciation;
+        
+        [cell setNeedsUpdateConstraints];
+        [cell updateConstraintsIfNeeded];
+        return cell;
+    }else {
+        UITableViewCell *cell;
+        return cell;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section == 0 && indexPath.row == 0) {
-        UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    if (indexPath.section == 0) {
+        AppreciationCell *cell = [self.offscreenCells objectForKey:AppreciationCellIdentifier];
         if (cell == nil) {
-            cell = [[UITableViewCell alloc] init];
+            cell = [[AppreciationCell alloc] init];
+            [self.offscreenCells setObject:cell forKey:AppreciationCellIdentifier];
         }
+        
+        cell.bodyLabel.text = self.poem.poemAppreciation;
         
         [cell setNeedsUpdateConstraints];
         [cell updateConstraintsIfNeeded];

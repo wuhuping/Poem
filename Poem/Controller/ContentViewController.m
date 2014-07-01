@@ -46,6 +46,8 @@
 {
     [super viewWillAppear:animated];
     
+    self.navigationController.navigationBarHidden = YES;
+    
     [self randomBackgroundImage];
     [self fetchData];
 }

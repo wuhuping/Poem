@@ -33,6 +33,8 @@
 		115E6E781957D475005918A3 /* Poem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 115E6E761957D475005918A3 /* Poem.xcdatamodeld */; };
 		115E6E7B1957D6BB005918A3 /* Poem.m in Sources */ = {isa = PBXBuildFile; fileRef = 115E6E7A1957D6BB005918A3 /* Poem.m */; };
 		115E6E8319581D63005918A3 /* AnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 115E6E8219581D63005918A3 /* AnimationHelper.m */; };
+		1165BC2419625CBD00E4C614 /* AppreciationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1165BC2319625CBD00E4C614 /* AppreciationCell.m */; };
+		1165BC2719625D5300E4C614 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1165BC2619625D5300E4C614 /* UIView+AutoLayout.m */; };
 		116CF1CC195D0B6700055740 /* CoreDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 116CF1CB195D0B6700055740 /* CoreDataService.m */; };
 		116CF1CE195D0BE000055740 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116CF1CD195D0BE000055740 /* CoreData.framework */; };
 		116CF1D8195D3E2600055740 /* Bamboo_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 116CF1D0195D3E2600055740 /* Bamboo_bg@2x.png */; };
@@ -104,6 +106,10 @@
 		115E6E8019580A5C005918A3 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		115E6E8119581D63005918A3 /* AnimationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationHelper.h; sourceTree = "<group>"; };
 		115E6E8219581D63005918A3 /* AnimationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationHelper.m; sourceTree = "<group>"; };
+		1165BC2219625CBD00E4C614 /* AppreciationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppreciationCell.h; sourceTree = "<group>"; };
+		1165BC2319625CBD00E4C614 /* AppreciationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppreciationCell.m; sourceTree = "<group>"; };
+		1165BC2519625D5300E4C614 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		1165BC2619625D5300E4C614 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		116CF1CA195D0B6700055740 /* CoreDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataService.h; sourceTree = "<group>"; };
 		116CF1CB195D0B6700055740 /* CoreDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataService.m; sourceTree = "<group>"; };
 		116CF1CD195D0BE000055740 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -305,6 +311,8 @@
 				11576412195951900062FF6E /* MenuTableViewCell.m */,
 				11BE3D291961391F00D4EEFE /* AuthorInfoView.h */,
 				11BE3D2A1961391F00D4EEFE /* AuthorInfoView.m */,
+				1165BC2219625CBD00E4C614 /* AppreciationCell.h */,
+				1165BC2319625CBD00E4C614 /* AppreciationCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,6 +320,8 @@
 		115E6E7C19580A33005918A3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1165BC2519625D5300E4C614 /* UIView+AutoLayout.h */,
+				1165BC2619625D5300E4C614 /* UIView+AutoLayout.m */,
 				115E6E8019580A5C005918A3 /* Config.h */,
 				115E6E8119581D63005918A3 /* AnimationHelper.h */,
 				115E6E8219581D63005918A3 /* AnimationHelper.m */,
@@ -482,6 +492,8 @@
 				115E6E311957CF69005918A3 /* AppDelegate.m in Sources */,
 				115E6E6F1957D17A005918A3 /* PoemService.m in Sources */,
 				115E6E6C1957D138005918A3 /* PoemNavigationController.m in Sources */,
+				1165BC2719625D5300E4C614 /* UIView+AutoLayout.m in Sources */,
+				1165BC2419625CBD00E4C614 /* AppreciationCell.m in Sources */,
 				115E6E7B1957D6BB005918A3 /* Poem.m in Sources */,
 				11BE3D2B1961391F00D4EEFE /* AuthorInfoView.m in Sources */,
 				115E6E661957D002005918A3 /* ContentViewController.m in Sources */,
